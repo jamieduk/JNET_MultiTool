@@ -18,4 +18,7 @@ Also open ports (forwarding ports) and firewalls if required for port 776 and 77
 and for remote shell the port is 1234, all these can be changed!
 
 Added:
-    Connect To J~Net Chat with connect_to_jnet.sh
+
+    Connect To J~Net Chat with ./connect_to_jnet.sh
+    
+    Tic Tac Toe Game open with ./Play_TicTactoe.sh
