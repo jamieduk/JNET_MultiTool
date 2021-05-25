@@ -1,6 +1,7 @@
 # JNET_MultiTool
 
 Dont forget to run setup to get it all working and read Notes.txt
+YT https://www.youtube.com/watch?v=4VQ8fDtV0EE
 
 Code:
     sudo chmod +x *.sh
