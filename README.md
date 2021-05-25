@@ -16,3 +16,6 @@ Some Tips:
 Check file and folder permissions for user intended for to make sure it works!
 Also open ports (forwarding ports) and firewalls if required for port 776 and 777
 and for remote shell the port is 1234, all these can be changed!
+
+Added:
+    Connect To J~Net Chat with connect_to_jnet.sh
