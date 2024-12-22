@@ -26,14 +26,14 @@ cat all_messages.txt
 bash menu.sh ;;
 2) bash recieve.sh ;;
 3) bash send.sh ;;
-4) cal 
+4) calendar #cal 
 bash menu.sh;;
 5) bash file_rx.sh;;
 # send arg here
 6)  echo "Enter Filename"
     read myvar
     bash file_tx.sh "$myvar";;
-7) bash setup.sh;;
+7) cd remote && bash setup.sh;;
 8) bash view_file.sh;;
 9) cd remote && bash menu.sh;;
 esac
