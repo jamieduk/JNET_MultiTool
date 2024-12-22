@@ -1,13 +1,17 @@
 
+J~Net Multi Tool 2021 By J~Net
 
-
-
-For Multi Tool 2021
 
 https://jnet.forumotion.com/t1729-jnet-multi-tool-2021#2677
 
 
 Update:
+
+2024
+
+To get cal to work in Ubuntu you will need to change cal to calendar instead!
+
+sudo apt install -y calendar and update the menu.sh file to use calendar (option4)
 
 2021
 
